@@ -1,15 +1,15 @@
-# import requests
+import requests
 
-# def lecturadic():
+def lecturadic():
 
-#   with open("/home/kali/directory.txt") as dict_file:
+  with open("/home/kali/directory.txt") as dict_file:
   
-#     return dict_file.readlines()
+    return dict_file.readlines()
 
-# diccionario = lecturadic()
-# url=input("de una direccion")
+diccionario = lecturadic()
+url=input("de una direccion: ")
 
-# for dicc in diccionario:
+for dicc in diccionario:
 
-#     respuestas = requests.get(url + dicc.strip())
-#     print("Testing with: %s --> [%s]" % (dicc.strip (),respuestas.status_code))
+    respuestas = requests.get(url + dicc.strip())
+    print("Testing with: %s --> [%s]" % (dicc.strip (),respuestas.status_code))
